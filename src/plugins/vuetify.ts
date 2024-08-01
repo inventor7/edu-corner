@@ -45,7 +45,7 @@ export default createVuetify({
     },
     VCard: {
       elevation: 2,
-      rounded: "lg",
+
       flat: false,
     },
     VTextField: {

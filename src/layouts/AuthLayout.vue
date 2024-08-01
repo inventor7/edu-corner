@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <v-container fluid fill-height>
+      <v-container fluid class="fill-height parent_container">
         <router-view></router-view>
       </v-container>
     </v-main>
@@ -15,3 +15,9 @@ export default defineComponent({
   name: "AuthLayout",
 });
 </script>
+
+<style>
+.parent_container {
+  padding: 10px;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div>this is login page</div>
+  <div>this is register page</div>
   {{ count }}
   <v-btn @click="increment()" color="primary"> {{ $t("hello") }} </v-btn>
 </template>

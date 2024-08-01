@@ -1,0 +1,35 @@
+// src/styles/typography.scss
+
+// Apply Plus Jakarta Sans as the default font
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+// Use Tenor Sans for headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+// Custom classes for specific font weights
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+// You can add more custom typography classes here

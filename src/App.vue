@@ -1,28 +1,16 @@
 <template>
-  <router-view v-slot="{ Component }">
+  <router-view dir="auto" v-slot="{ Component }">
+    <div class="w-full h-full " :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'">
     <v-fade-transition mode="out-in">
       <component :is="Component"></component>
     </v-fade-transition>
+  </div>
   </router-view>
 </template>
 
 <script setup lang="ts">
-import { useLocale } from "vuetify";
 import { useI18n } from "vue-i18n";
 
-const { current: uiLocale } = useLocale();
-const { locale } = useI18n();
+const locale = useI18n();
 
-watch(
-  locale,
-  (appLocale) => {
-    if (!appLocale) return;
-
-    uiLocale.value = appLocale;
-
-    document.body.lang = appLocale;
-    document.body.dir = appLocale === "ar" ? "rtl" : "ltr";
-  },
-  { immediate: true }
-);
 </script>
